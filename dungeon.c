@@ -25,11 +25,7 @@
 	struct monster{
 		int coordx, coordy, life,prev_x,prev_y;
 	};
-	
-	struct question{
-		char *pregunta,*respuesta;
-	};
-	
+
 	 struct nodo{
 		int puntaje;
 		struct nodo *prox;
@@ -50,7 +46,6 @@ struct super_hero hero;
 
 int play_time;
 
-struct question preguntasss[preguntas];
 char *preguntas_aed[preguntas][preguntas];
 
  

@@ -225,19 +225,9 @@ int pedir_semilla() {
 		return semilla;
 }
 
-int aleatorio_en_rango(int minimo, int maximo){
-	srand(pedir_semilla());
-	return minimo + rand() / (RAND_MAX / (maximo - minimo + 1) + 1);
-}
-
 int aleatorio_propio(int minimo, int maximo){
 	srand( time(NULL) + pedir_semilla());
 	return (rand() % maximo) + minimo; 
-}
-
-int aleatorio (int min, int max) 
-{
-         return min +(int)(((max-min+1.0)*rand())/(RAND_MAX+1.0));
 }
 
 int crear_habitaciones(int p) {

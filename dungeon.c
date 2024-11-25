@@ -52,14 +52,9 @@ char *preguntas_aed[preguntas][preguntas];
 
 /* funciones */
 
-/* Devuelve un número aleatorio entre minimo y maximo, incluyendo a minimo y maximo https://parzibyte.me/blog/2019/03/21/obtener-numeros-aleatorios-c/ */
-int aleatorio_en_rango(int minimo, int maximo);
-
 int crear_habitaciones(int p);
 
 void drawrooms();
-
-int aleatorio (int min, int max); 
 
 int aleatorio_propio(int minimo, int maximo);
 
@@ -217,6 +212,7 @@ int main()
 	guardar_puntaje();
 	/* lo recorro, cargo a una lista ordenadamente y muestro los primeros 5*/
 	mostrar_puntaje();
+	getch();
 	return 0;
 }
 
